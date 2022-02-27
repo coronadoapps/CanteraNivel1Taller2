@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import com.sofka.Punto1.Punto1;
+import com.sofka.Punto10.Punto10;
 import com.sofka.Punto2.Punto2;
 import com.sofka.Punto3.Punto3;
 import com.sofka.Punto4.Punto4;
@@ -27,7 +28,7 @@ public class Main {
             limpiarPantalla();
             bandera = evaluarOpcion(opcion);
             
-        } while (bandera == true);
+        } while (bandera);
     }
 
     private static void menu() {
@@ -96,6 +97,11 @@ public class Main {
             case 9:
                 Punto9 p9 = new Punto9();
                 p9.Punto9();
+                presioneCualquierTeclaParaContinuar();
+                return true;
+            case 10:
+                Punto10 p10 = new Punto10();
+                p10.Punto10();
                 presioneCualquierTeclaParaContinuar();
                 return true;
             case 0:
