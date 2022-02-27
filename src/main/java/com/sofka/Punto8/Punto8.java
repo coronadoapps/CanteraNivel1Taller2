@@ -26,7 +26,7 @@ public class Punto8 {
             limpiarPantalla();
             continuar = evaluarOpcion(opcion, sabores, porciones, decoraciones, ventas);
             presioneCualquierTeclaParaContinuar();
-        } while(continuar == true);
+        } while(continuar);
     }
 
     private static void solicitarDato(String dato){
